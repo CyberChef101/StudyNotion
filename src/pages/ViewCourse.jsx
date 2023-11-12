@@ -31,7 +31,7 @@ export default function ViewCourse() {
       })
       dispatch(setTotalNoOfLectures(lectures))
     })()
-  }, []) // Empty dependency array to run the effect once
+  }, [courseId, dispatch, token]) // Empty dependency array to run the effect once
 
   return (
     <>

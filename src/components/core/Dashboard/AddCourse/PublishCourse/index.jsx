@@ -21,7 +21,7 @@ export default function PublishCourse() {
     if (course?.status === COURSE_STATUS.PUBLISHED) {
       setValue("public", true)
     }
-  }, [])
+  }, )//[] add karna hain
 
   const goBack = () => {
     dispatch(setStep(2))
